@@ -1,0 +1,20 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+notifications:
+  email: false
+  slack:
+    secure: pZskOh5nH9frvvS1r2YzvjSDGe1pgGQZ+kGu5DWggUC/wgzyjcOgALfPXSIIfXsZj9QbZjRzum1uj5wD1o0wCCDGyzq7P+eG0w6KBE39xpeQmaAzrT9IeWcJHmIUKHR7V30ogzqN5jMDGryTiKLxFeplp2IXr4xJGwKOKij0SqEpTRHXCu/qmQJ67LD7XRmbki0svCOo+GNXhYhSgKqGa6AA2naSuQZPklaK8YWRLmZsTWdy+L3thLnQTMz4Pn69HcQGXNdMCAYuGnp6l+93/YrY65A1kQ/Jfip6QhNk2Wl2ggWDq9GHaXX2ZOteFL5zQZMTA1yaEuK1FirINN/JUXrOoDVjMvJaU/EHEwCBDM1t/R8vpmDnmxPOToeNKhGFeOGQJ382ZCExTSy+qiEyr7v1KKc3qP29+EqgGDBc1EORpzbpJMMrS8H4pny92ba7nh7eiDkaOKuAfDWsNgIDrU6FNj/gna5M0Eyerrpd3QxZftnYG4Lh8Arhlul0zISRHgHVr7ztfwp9bnXnQFhzD6pla+GOGr5NUff6yMu1qJFy107RfAPZg6W7KpL7VkBOabyWgdB7CW8YE4UnxldVgbDyA+c6A/it4FLpcy0JcqaFVDbscbB7UwcPh3ZfAR7lGcNNfKP8iTJbjWrS3FQ31++tFTUUMNOvOOiIXExTslk=
+node_js:
+- '7'
+- '6'
+before_script:
+- npm prune
+script:
+- npm run lint
+- git diff --exit-code HEAD
+- npm test
+branches:
+  except:
+  - "/^v\\d+\\.\\d+\\.\\d+$/"

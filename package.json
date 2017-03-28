@@ -1,0 +1,21 @@
+{
+  "name": "sinap-cli",
+  "version": "0.0.0",
+  "readme": "README.md",
+  "description": "Command line interface for sinap",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2graphic/sinap-cli"
+  },
+  "scripts": {
+    "lint": "echo TODO: echo implement linting and formatting && exit 1",
+    "test": "echo TODO: implement testing && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.2",
+    "typescript-formatter": "^5.1.2"
+  }
+}
