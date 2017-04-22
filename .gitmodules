@@ -1,3 +1,6 @@
 [submodule "test-support/turing"]
 	path = test-support/turing
 	url = https://github.com/2graphic/turing-machine-plugin.git
+[submodule "plugins/nfa"]
+	path = plugins/nfa
+	url = https://github.com/2graphic/nfa-plugin.git

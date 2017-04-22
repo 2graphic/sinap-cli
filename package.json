@@ -1,6 +1,6 @@
 {
   "name": "sinap-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "readme": "README.md",
   "description": "Command line interface for sinap",
   "license": "MIT",
