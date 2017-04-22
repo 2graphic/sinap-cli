@@ -8,15 +8,23 @@
     "type": "git",
     "url": "https://github.com/2graphic/sinap-cli"
   },
+  "bin": {"sinap-convert": "bin/convert.js"},
   "scripts": {
-    "lint": "echo TODO: echo implement linting and formatting && exit 1",
-    "test": "echo TODO: implement testing && exit 1"
+    "format": "tsfmt -r && tslint --fix --project .",
+    "lint": "tsfmt --verify && tslint --project .",
+    "build": "tsc -p .",
+    "test:nobuild": "echo no tests",
+    "test": "npm run build && npm run test:nobuild",
+    "prepublishOnly": "npm run lint && npm run test",
+    "clean": "rimraf ./node_modules ./typings ./lib"
   },
   "dependencies": {
+    "@types/xml2js": "0.0.33",
+    "xml2js": "^0.4.17",
     "@types/argparse": "^1.0.30",
     "argparse": "^1.0.9",
-    "sinap-core": "^3.9.6",
-    "sinap-typescript": "^0.4.12"
+    "sinap-core": "3.10.3",
+    "sinap-typescript": "0.4.15"
   },
   "devDependencies": {
     "tslint": "^4.5.1",

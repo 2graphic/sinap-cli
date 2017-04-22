@@ -12,3 +12,5 @@ const interp = subparsers.addParser("interp", {
 interp.addArgument(["graph"], {
     help: "Which graph to interpret."
 });
+
+interp.parseArgs();
