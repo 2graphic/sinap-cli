@@ -1,0 +1,1 @@
+node ./bin/interpret.js ./plugins/nfa ./examples/SimpleNFA.sinap 1

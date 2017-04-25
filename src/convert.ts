@@ -3,7 +3,7 @@
 import { ArgumentParser } from "argparse";
 import * as fs from "fs";
 import { Parser } from "xml2js";
-import { TypescriptPluginLoader } from "sinap-typescript";
+import { TypescriptPluginLoader } from "sinap-typescript-loader";
 import { Plugin, Model, getPluginInfo, ElementValue } from "sinap-core";
 import { Value, Type } from "sinap-types";
 

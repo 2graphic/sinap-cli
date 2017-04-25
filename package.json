@@ -8,7 +8,10 @@
     "type": "git",
     "url": "https://github.com/2graphic/sinap-cli"
   },
-  "bin": {"sinap-convert": "bin/convert.js"},
+  "bin": {
+    "sinap-convert": "bin/convert.js",
+    "sinap-run": "bin/interpret.js"
+  },
   "scripts": {
     "format": "tsfmt -r && tslint --fix --project .",
     "lint": "tsfmt --verify && tslint --project .",
@@ -19,12 +22,13 @@
     "clean": "rimraf ./node_modules ./typings ./lib"
   },
   "dependencies": {
-    "@types/xml2js": "0.0.33",
-    "xml2js": "^0.4.17",
     "@types/argparse": "^1.0.30",
+    "@types/xml2js": "0.0.33",
     "argparse": "^1.0.9",
-    "sinap-core": "3.10.3",
-    "sinap-typescript": "0.4.15"
+    "sinap-core": "^3.11.1",
+    "sinap-types": "^0.5.0",
+    "sinap-typescript-loader": "^0.4.19",
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "tslint": "^4.5.1",
