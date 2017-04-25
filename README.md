@@ -7,7 +7,7 @@
 ## Example Usage:
 
     $ sinap-convert plugins/nfa somefile.jff somefile.sinap
-    $ sinap-run plugins/nfa somefile.sinap 10111
+    $ sinap-run plugins/nfa somefile.sinap 10111 111000111
 
 ### Convert Help:
 
