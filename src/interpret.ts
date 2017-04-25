@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { ArgumentParser } from "argparse";
 import { getPluginInfo, Model, readFile } from "sinap-core";
 import { Value, Type } from "sinap-types";

@@ -1,6 +1,6 @@
 {
   "name": "sinap-cli",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "readme": "README.md",
   "description": "Command line interface for sinap",
   "license": "MIT",
@@ -12,6 +12,9 @@
     "sinap-convert": "bin/convert.js",
     "sinap-run": "bin/interpret.js"
   },
+  "files": [
+    "bin/"
+  ],
   "scripts": {
     "format": "tsfmt -r && tslint --fix --project .",
     "lint": "tsfmt --verify && tslint --project .",
