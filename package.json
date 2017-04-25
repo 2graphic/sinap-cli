@@ -1,6 +1,6 @@
 {
   "name": "sinap-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "readme": "README.md",
   "description": "Command line interface for sinap",
   "license": "MIT",
@@ -28,9 +28,9 @@
     "@types/argparse": "^1.0.30",
     "@types/xml2js": "0.0.33",
     "argparse": "^1.0.9",
-    "sinap-core": "^3.11.1",
-    "sinap-types": "^0.5.0",
-    "sinap-typescript-loader": "^0.4.19",
+    "sinap-core": "3.11.3",
+    "sinap-types": "0.6.0",
+    "sinap-typescript-loader": "0.4.20",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
